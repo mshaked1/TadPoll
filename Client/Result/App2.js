@@ -16,7 +16,7 @@ export default class App extends Component {
 		this.update = this.update.bind(this);
 		this.state = {
 			question: '',
-			answers: ['','','','',''],
+			answers: [],
 			choices: [],
 			counter: [0,0,0,0,0],
 			colors: this.colors
