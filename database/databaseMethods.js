@@ -151,11 +151,11 @@ function resetCounter(index) {
 //Make sure there aren't issues calling Poll variable. May need to require PollModel on server.js file
 function addPoll(req, res, next) {
   console.log('req.body add Poll',req.body);
-  
+
   var newPoll = Poll({
     question: req.body.question,
     choices: ['A','B','C','D','E'],
-    answers: req.body.answers,
+    answers: req.body.answer,
     counter: [0,0,0,0,0]
   });
 
@@ -173,7 +173,7 @@ function addPoll(req, res, next) {
 //It works.
   // function addPollTest(obj) {
   //   console.log('req.body add Poll',obj.body);
-    
+
   //   var newPoll = Poll({
   //     question: obj.body.question,
   //     choices: ['A','B','C','D','E'],
